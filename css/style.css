@@ -10,14 +10,20 @@
 @import url(jquery-ui.css);
 @import url(nice-select.css);
 
-@media screen and (min-width: 768px)  {
-    .mobile-only   {
-        display:none;
+@font-face {
+    font-family: 'Rosalinda';
+    src: url('../fonts/Miranda.ttf');
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-only {
+        display: none;
     }
 }
-@media screen and (max-width: 768px)  {
-    .desktop-only   {
-        display:none;
+
+@media screen and (max-width: 768px) {
+    .desktop-only {
+        display: none;
     }
 }
 
@@ -33,8 +39,8 @@ html {
 
 body {
     color: #666666;
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-family: 'Rosalinda';
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
@@ -106,7 +112,7 @@ h4 a,
 h5 a,
 h6 a {
     color: #212121;
-    text-decoration: none!important;
+    text-decoration: none !important;
     opacity: 1
 }
 
@@ -151,7 +157,7 @@ img {
     height: auto;
 }
 
- :focus {
+:focus {
     outline: 0;
 }
 
@@ -220,7 +226,8 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(../images/hero.jpg);;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(../images/hero.jpg);
+    ;
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -228,11 +235,12 @@ button {
     background-position: center;
 }
 
-.header_hero{
+.header_hero {
     width: 100%;
     float: left;
-    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(../images/hero.jpg);;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(../images/hero.jpg);
+    ;
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -278,8 +286,8 @@ button {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
-    color:#a9a8a8;
-    
+    color: #a9a8a8;
+
 }
 
 .navbar-brand {
@@ -338,7 +346,7 @@ button {
     font-size: 40px;
     color: #fff;
     font-weight: 800;
-  
+
 }
 
 .banner_taital {
@@ -494,6 +502,16 @@ button {
     float: left;
 }
 
+.coffee_img {
+    overflow: hidden;
+}
+
+.coffee_img img:hover{
+    transform: scale(1.2);
+    /* filter:brightness(80%); */
+    filter:saturate(120%) contrast(120%) drop-shadow(10px 10px 20px black);
+}
+
 .types_text {
     width: 100%;
     float: left;
@@ -584,6 +602,7 @@ button {
     width: 100%;
     float: left;
     padding-top: 40px;
+    position: relative;
 }
 
 .about_taital {
@@ -605,7 +624,7 @@ button {
     padding: 40px 20px 30px 20px;
     box-shadow: 0px 0px 30px 0px;
     position: absolute;
-    top: 1550px;
+    top: 15px;
 }
 
 .image_iman {
@@ -817,7 +836,7 @@ button {
     padding: 11px 20px;
     margin-top: 20px;
     border-radius: 40px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Pacifico', sans-serif;
 }
 
 input.mail_text::placeholder {
@@ -835,7 +854,7 @@ input.mail_text::placeholder {
     height: 110px;
     margin-top: 20px;
     border-radius: 40px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Pacifico', sans-serif;
 }
 
 textarea#comment.massage-bt::placeholder {
@@ -860,7 +879,7 @@ textarea#comment.massage-bt::placeholder {
     display: block;
     font-weight: bold;
     border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Pacifico', sans-serif;
 }
 
 .send_bt a:hover {
@@ -889,6 +908,7 @@ textarea#comment.massage-bt::placeholder {
     text-align: center;
     margin-top: 10px;
 }
+
 /* footer section start */
 
 .footer_section {
@@ -1060,7 +1080,7 @@ textarea#comment.update_mail::placeholder {
     color: #ffffff;
     text-align: center;
     margin-left: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Pacifico', sans-serif;
 }
 
 .copyright_text a {
